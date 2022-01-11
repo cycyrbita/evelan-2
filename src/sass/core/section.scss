@@ -1,0 +1,35 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+    &_face {
+        background-image: url("../media/section/face.jpg");
+        background-position: center top;
+    }
+}
+
+.section__title {
+    font-size: 52px;
+    color: #2e2960;
+    font-family: "NotoSerif", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+@media (max-width: 1280px) {
+    .section {}
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {}
+}

@@ -1,0 +1,31 @@
+
+.face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.face__box {
+    flex: 0 0 auto;
+}
+
+.face__logo {
+    a {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 19px;
+        color: #1f1f1f;
+        background-color: #fff;
+        text-decoration: none;
+        padding: 2px 5px;
+    }
+}
+
+.face__title {
+    margin-bottom: 55px;
+    font-weight: 300;
+    color: #1f1f1f;
+    font-size: 51px;
+    max-width: 535px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}

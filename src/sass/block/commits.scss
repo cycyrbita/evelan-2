@@ -1,0 +1,188 @@
+
+.commits__callback {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: #ece6df;
+    padding: 15px 15px 15px 180px;
+    font-size: 20px;
+}
+
+.commits__human {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex: 0 0 auto;
+}
+.commits__product {
+    flex: 0 0 auto;
+    max-width: 150px;
+}
+
+.commits__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.commits__subtitle {
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.commits__box .owl-stage-outer {
+    padding-bottom: 20px;
+}
+
+.commits__box .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px !important;
+}
+
+.commits__box .owl-dot {
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 50% !important;
+}
+
+.commits__box .owl-nav {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel.commits__box .owl-nav button {
+    display: block;
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px !important;
+    cursor: pointer;
+
+    &:focus {
+        transform: scale(0.9);
+        outline: none;
+    }
+}
+
+.owl-carousel.commits__box .owl-nav .owl-prev {
+    background-image: url("../media/commits/prev.png");
+}
+
+.owl-carousel.commits__box .owl-nav .owl-next {
+    background-image: url("../media/commits/next.png");
+}
+
+.commits__box .owl-nav button > span {
+    display: none;
+}
+
+.commits__box .owl-dot.active {
+    background-color: #30588d !important;
+    border: 0 !important;
+}
+
+.commits__box .owl-dot:focus {
+    outline: none;
+}
+
+.commits__name {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #2e2a60;
+}
+
+.commits__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "NotoSerif", sans-serif;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.commits__stars img {
+    width: auto !important;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .commits__callback {
+        padding: 30px;
+        margin-top: 150px;
+    }
+
+    .commits__human {
+        bottom: 100%;
+        left: 10px;
+    }
+
+    .commits__product {
+        position: absolute;
+        bottom: calc(100% - 15px);
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .commits__description {
+        font-size: 19px;
+    }
+
+    .commits__box .owl-dots {
+        margin-top: 15px !important;
+    }
+
+    .commits__box .owl-nav {
+        max-width: 235px;
+        top: 27px;
+    }
+
+    .commits__box .owl-dot {
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        border: none !important;
+        border-radius: 50% !important;
+        background-color: #f2f2f2 !important;
+    }
+
+    .commits__title {
+        margin-bottom: 15px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .commits__title {
+        font-size: 32px;
+    }
+
+    .commits__callback {
+        padding: 15px;
+        font-size: 18px;
+    }
+}

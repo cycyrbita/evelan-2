@@ -1,16 +1,11 @@
 
 .form {
     width: 100%;
-    max-width: 350px;
-    padding: 30px;
+    max-width: 320px;
+    padding: 35px;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-left: auto;
-}
-
-.form__wrap {
-    padding: 25px;
-    border: 2px solid #d9a6b3;
 }
 
 .form__title {
@@ -133,11 +128,6 @@
 }
 
 @media (max-width: 1280px) {
-    .form {
-        margin-top: 40px;
-        margin-left: auto;
-    }
-
     .form__title {
         font-size: 24px;
     }
@@ -148,6 +138,7 @@
         padding: 30px;
         padding-top: 60px;
         max-width: 100%;
+        background-color: #ecedec;
     }
 
     .form__title  {

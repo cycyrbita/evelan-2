@@ -1,5 +1,7 @@
 
 .face {
+    position: relative;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
 }
@@ -58,33 +60,9 @@
     }
 }
 
-.face__product {
-    position: absolute;
-    bottom: 145px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 857px;
-}
-
 @media (max-width: 1280px) {
     .face__title {
         font-size: 34px;
-    }
-
-    .face__product {
-        max-width: 700px;
-    }
-
-    .face__list-item {
-        background-color: rgb(227, 199, 192);
-        padding: 10px 10px 10px 50px;
-        border-radius: 15px 15px 0 15px;
-        font-size: 18px;
-
-        &::before {
-            top: 10px;
-            left: 10px;
-        }
     }
 
     .face__list {
@@ -111,42 +89,44 @@
     }
 
     .face__list {
+        position: relative;
         max-width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .face__list-item {
-        min-height: 52px;
-        border-radius: 0;
-        background-color: transparent;
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        padding-bottom: 470px;
 
         &::before {
-            top: 0;
-            left: 0;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            bottom: 90px;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 283px;
+            background-image: url("../media/product.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            content: '';
         }
 
-        & + & {
-            margin-top: 15px;
+        &::after {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 562px;
+            height: 470px;
+            background-image: url("../media/product-before-768.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            content: '';
         }
-    }
-
-    .face__product {
-        position: static;
-        transform: translateX(0);
-        margin-top: 100px;
-        margin-bottom: 50px;
     }
 }
 
 @media (max-width: 480px) {
     .face__title {
         font-size: 26px;
-    }
-
-    .face__list-item {
-        font-size: 16px;
     }
 }

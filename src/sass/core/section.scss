@@ -32,6 +32,14 @@
         background-position: center;
         background-size: cover;
     }
+
+    &_help {
+        min-height: 800px;
+        background-color: #cdaea2;
+        background-image: url("../media/section/help.jpg");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 420px) bottom;
+    }
 }
 
 .section__product {
@@ -104,6 +112,13 @@
                 display: block;
             }
         }
+
+        &_help {
+            min-height: 0;
+            padding-bottom: 500px;
+            background-size: 450px;
+            background-position: center bottom;
+        }
     }
 
     .section__product {
@@ -115,6 +130,11 @@
     .section {
         &_face {
             background-position: center -100px;
+        }
+
+        &_help {
+            padding-bottom: 400px;
+            background-size: 350px;
         }
     }
 }

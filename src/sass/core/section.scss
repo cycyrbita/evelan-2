@@ -24,6 +24,14 @@
             align-items: center;
         }
     }
+
+    &_beauty {
+        background-color: #f6f6f6;
+        background-image: url("../media/section/beauty.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .section__product {

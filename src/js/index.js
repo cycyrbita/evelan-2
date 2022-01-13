@@ -70,8 +70,9 @@ $(document).ready(function () {
     });
 
     function twent() {
-        $(".benefit__media").twentytwenty({
-            no_overlay: true
+        $(".event__body").twentytwenty({
+            no_overlay: true,
+            orientation: 'vertical'
         });
     }
 

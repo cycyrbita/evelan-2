@@ -1,0 +1,51 @@
+
+.callback {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    padding-left: 450px;
+    background-color: rgb(226,200,191);
+    background-image: linear-gradient(54deg, rgba(226,200,191,1) 0%, rgba(255,255,255,1) 100%);
+    border: 2px solid #e2c8bf;
+    font-size: 18px;
+}
+
+.callback__product {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    max-width: 220px;
+}
+
+.callback__human {
+    position: absolute;
+    bottom: 0;
+    left: 230px;
+}
+
+@media (max-width: 768px) {
+    .callback {
+        padding: 25px;
+        padding-bottom: 220px;
+    }
+
+    .callback__product {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .callback {
+        padding-bottom: 180px;
+    }
+
+    .callback__product {
+        max-width: 250px;
+        left: -30px;
+    }
+
+    .callback__human {
+        width: 140px;
+        left: 140px;
+    }
+}

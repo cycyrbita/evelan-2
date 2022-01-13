@@ -1,0 +1,34 @@
+
+.problem {
+    padding-left: 50%;
+}
+
+.problem__title {
+    margin-bottom: 30px;
+    font-size: 58px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.problem__subtitle {
+    font-size: 27px;
+}
+
+.problem__description {
+    font-size: 22px;
+
+    p + p {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .problem {
+        padding-left: 0;
+    }
+
+    .problem__title {
+        font-size: 46px;
+    }
+}

@@ -40,6 +40,13 @@
         background-repeat: no-repeat;
         background-position: calc(50% - 420px) bottom;
     }
+
+    &_sostav {
+        background-color: #fff;
+        background-image: url("../media/section/sostav.jpg");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
 }
 
 .section__product {
@@ -80,6 +87,14 @@
         &_face {
             padding-bottom: 460px;
         }
+
+        &_sostav {
+            padding-bottom: 440px;
+            background-color: #fff;
+            background-image: url("../media/section/sostav-1280.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
     }
 
     .section__product {
@@ -118,6 +133,10 @@
             padding-bottom: 500px;
             background-size: 450px;
             background-position: center bottom;
+        }
+
+        &_sostav {
+            padding-bottom: 440px;
         }
     }
 

@@ -1,5 +1,15 @@
 
 $(document).ready(function () {
+    $('.sostav__name').click(function() {
+        if($(this).parent('.sostav__list-item').hasClass('active')) {
+            $(this).parent('.sostav__list-item').removeClass('active')
+            $(this).next().fadeOut()
+        } else {
+            $(this).parent('.sostav__list-item').addClass('active')
+            $(this).next().fadeIn()
+        }
+    })
+
     Start();
 
     $('.js-commits__box').owlCarousel({

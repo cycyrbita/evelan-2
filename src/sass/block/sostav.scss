@@ -1,0 +1,88 @@
+
+.sostav {
+    padding-left: 440px;
+}
+
+.sostav__title {
+    font-size: 51px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.sostav__list-item {
+    & + & {
+        margin-top: 13px;
+    }
+
+    &.active {
+        .sostav__name {
+            &::before {
+                top: calc(100% + 30px);
+                transform: translateY(0) rotate(90deg);
+            }
+        }
+    }
+
+    &.visible {
+        .sostav__info {
+            display: block;
+        }
+    }
+}
+
+.sostav__name {
+    position: relative;
+    background-color: #e2c8bf;
+    padding: 10px 10px 10px 55px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 11px;
+        background-image: url('../media/sostav/arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        content: '';
+        transition: .3s ease;
+    }
+}
+
+.sostav__info {
+    display: none;
+    padding: 15px 15px 15px 55px;
+    background-color: #fff;
+    min-height: 60px;
+    font-size: 18px;
+}
+
+@media (max-width: 1280px) {
+    .sostav {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sostav__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sostav__title {
+        font-size: 24px;
+    }
+
+    .sostav__name {
+        font-size: 15px;
+    }
+}

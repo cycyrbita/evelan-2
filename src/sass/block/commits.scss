@@ -23,6 +23,9 @@
 .commits__title {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 51px;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .commits__subtitle {
@@ -49,12 +52,12 @@
 }
 
 .commits__box .owl-dot {
-    width: 15px !important;
-    height: 15px !important;
-    margin-right: 3px !important;
-    margin-left: 3px !important;
-    background-color: #fff !important;
-    border: 1px solid #000 !important;
+    width: 23px !important;
+    height: 23px !important;
+    margin-right: 6px !important;
+    margin-left: 6px !important;
+    background-color: #f7eade !important;
+    border: 1px solid #f7eade !important;
     border-radius: 50% !important;
 }
 
@@ -99,7 +102,7 @@
 }
 
 .commits__box .owl-dot.active {
-    background-color: #30588d !important;
+    background-color: #d0bcb6 !important;
     border: 0 !important;
 }
 
@@ -108,20 +111,23 @@
 }
 
 .commits__name {
+    margin-bottom: 5px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.commits__year {
+    display: inline-block;
     font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    color: #2e2a60;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: #f7eade;
 }
 
 .commits__description {
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-align: center;
-    font-family: "NotoSerif", sans-serif;
-    font-size: 26px;
-    font-style: italic;
+    line-height: 1.4;
 }
 
 .commits__stars img {
@@ -148,8 +154,12 @@
 }
 
 @media (max-width: 480px) {
+    .commits__item {
+        text-align: center;
+    }
+
     .commits__description {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .commits__box .owl-dots {
@@ -162,8 +172,6 @@
     }
 
     .commits__box .owl-dot {
-        width: 18px !important;
-        height: 18px !important;
         margin-right: 10px !important;
         margin-left: 10px !important;
         border: none !important;
@@ -173,12 +181,8 @@
 
     .commits__title {
         margin-bottom: 15px;
-        font-size: 26px;
+        font-size: 34px;
         text-align: center;
-    }
-
-    .commits__title {
-        font-size: 32px;
     }
 
     .commits__callback {

@@ -26,7 +26,7 @@ $(document).ready(function () {
             },
 
             1280 : {
-                items: 3
+                items: 4
             }
         }
     });

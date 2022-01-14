@@ -47,6 +47,14 @@
         background-repeat: no-repeat;
         background-position: calc(100% - 967px) top;
     }
+
+    &_prof {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        background-color: rgb(226,200,191);
+        background-image: linear-gradient(267deg, rgba(226,200,191,1) 0%, rgba(255,255,255,1) 100%);
+    }
 }
 
 .section__product {
@@ -82,6 +90,15 @@
     line-height: 1;
 }
 
+.section__human {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 599px;
+    height: 742px;
+    margin-left: 160px;
+}
+
 @media (max-width: 1280px) {
     .section {
         &_face {
@@ -96,6 +113,10 @@
             background-repeat: no-repeat;
             background-position: center bottom;
         }
+
+        &_prof {
+            background: #f3e9e5;
+        }
     }
 
     .section__product {
@@ -106,6 +127,10 @@
             height: 700px;
             margin-top: -110px;
         }
+    }
+
+    .section__human {
+        display: none;
     }
 }
 
